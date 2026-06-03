@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <!-- ── SEO & Open Graph Tags ── -->
-<title>Pietro G. M. Calderoni — Management Engineering</title>
-<meta name="description" content="Portfolio di Pietro G. M. Calderoni, studente di Ingegneria Gestionale con specializzazione IT. Analisi dati, automazione processi e leadership.">
-<meta property="og:title" content="Pietro G. M. Calderoni — Management Engineering">
-<meta property="og:description" content="Portfolio personale: ecosistemi tech, ottimizzazione processi e approccio Human-in-the-Loop.">
-<meta property="og:type" content="website">
-<!-- Sostituisci questo link con l'URL assoluto della tua foto o di uno screenshot del sito per l'anteprima link -->
-<meta property="og:image" content="https://iltuodominio.it/IMG_2718.jpg"> 
-<meta name="google-site-verification" content="p1L4iwxIWvIShy2mKzGcB8PP8ZD7gyJustafN8HpN84" />
-
-<!-- Aggiunta della Favicon (il quadratino nella scheda del browser) -->
-<link rel="icon" type="image/png" href="favicon.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Pietro Calderoni | Management Engineering Student at University of Florence</title>
+<meta content="Personal portfolio of Pietro Calderoni, Management Engineering student at the University of Florence, focused on IT, process automation and data-driven projects." name="description"/>
+<meta content="Pietro Calderoni | Management Engineering Student at University of Florence" property="og:title"/>
+<meta content="Personal portfolio: technology ecosystems, process optimization and a Human-in-the-Loop approach." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://iltuodominio.it/IMG_2718.jpg" property="og:image"/>
+<meta content="p1L4iwxIWvIShy2mKzGcB8PP8ZD7gyJustafN8HpN84" name="google-site-verification">
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
   /* ── Tokens ─────────────────────────────────────────── */
   :root {
@@ -120,6 +115,49 @@
   }
   .nav-cta:hover { background: var(--terra); color: #fff; }
   
+
+  /* ── Language Switcher ───────────────────────────────── */
+  .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--stone);
+    border: 0.5px solid var(--border);
+    border-radius: 20px;
+    padding: 3px 5px;
+    background: rgba(248, 241, 228, 0.55);
+  }
+  .lang-switch a {
+    padding: 3px 7px;
+    border-radius: 14px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .lang-switch a:hover { color: var(--terra); }
+  .lang-switch a.active {
+    background: var(--terra);
+    color: #fff;
+  }
+  .mobile-menu .mobile-lang-switch {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .mobile-menu .mobile-lang-switch a {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    border: 0.5px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 14px;
+  }
+  .mobile-menu .mobile-lang-switch a.active {
+    background: var(--terra);
+    color: #fff;
+    border-color: var(--terra);
+  }
+
   .hamburger {
     display: none;
     background: none;
@@ -1431,7 +1469,50 @@
     /* Nascondi voci menu per mostrare hamburger */
     .nav-links { display: none; }
     .nav-cta.desktop-only { display: none; }
-    .hamburger { display: block; }
+  
+  /* ── Language Switcher ───────────────────────────────── */
+  .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--stone);
+    border: 0.5px solid var(--border);
+    border-radius: 20px;
+    padding: 3px 5px;
+    background: rgba(248, 241, 228, 0.55);
+  }
+  .lang-switch a {
+    padding: 3px 7px;
+    border-radius: 14px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .lang-switch a:hover { color: var(--terra); }
+  .lang-switch a.active {
+    background: var(--terra);
+    color: #fff;
+  }
+  .mobile-menu .mobile-lang-switch {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .mobile-menu .mobile-lang-switch a {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    border: 0.5px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 14px;
+  }
+  .mobile-menu .mobile-lang-switch a.active {
+    background: var(--terra);
+    color: #fff;
+    border-color: var(--terra);
+  }
+
+  .hamburger { display: block; }
     
     footer { flex-direction: column; gap: 10px; }
   }
@@ -1456,926 +1537,821 @@
     .skill-bar { transform: scaleX(1) !important; }
   }
 </style>
-</head>
+</meta><link href="https://pietrogmcalderoni.github.io/" hreflang="en" rel="alternate"/><link href="https://pietrogmcalderoni.github.io/it/" hreflang="it" rel="alternate"/><link href="https://pietrogmcalderoni.github.io/" hreflang="x-default" rel="alternate"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pietro Calderoni",
+  "alternateName": "Pietro G. M. Calderoni",
+  "url": "https://pietrogmcalderoni.github.io/",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Florence",
+    "sameAs": "https://www.unifi.it/"
+  },
+  "jobTitle": "Management Engineering Student",
+  "knowsAbout": [
+    "Management Engineering",
+    "Information Technology",
+    "Process Automation",
+    "Data Analysis",
+    "Operations Management"
+  ],
+  "sameAs": [
+    "https://github.com/piecalde"
+  ]
+}</script></head>
 <body>
-
 <div class="cursor-dot" id="cursor"></div>
-
 <!-- ── Nav ── -->
 <nav>
-  <div class="nav-logo" id="nav-logo">PIETRO CALDERONI</div>
-  
-  <div class="nav-links">
-    <a href="#about">Chi sono</a>
-    <a href="#experience">Esperienza</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Progetti</a>
-    <a href="#education">Formazione</a>
-    <a href="#travel">Viaggi</a>
-    <a href="#contact">Contatti</a>
-  </div>
-  
-  <div class="nav-actions">
-    <a href="mailto:pietrogmcalderoni@gmail.com" class="nav-cta desktop-only">Scrivimi</a>
-    
-    <!-- Pulsante Menu Hamburger Mobile -->
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 7h16M4 12h16M4 17h16" class="menu-icon-lines"/>
-      </svg>
-    </button>
-  </div>
+<div class="nav-logo" id="nav-logo">PIETRO CALDERONI</div>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#travel">Travel</a>
+<a href="#contact">Contact</a>
+</div>
+<div class="nav-actions">
+<a class="nav-cta desktop-only" href="mailto:pietrogmcalderoni@gmail.com">Contact me</a>
+<!-- Pulsante Menu Hamburger Mobile -->
+<div aria-label="Language selector" class="lang-switch"><a class="active" href="/">EN</a><a href="/it/">IT</a></div><button aria-label="Menu" class="hamburger" id="hamburger">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<path class="menu-icon-lines" d="M4 7h16M4 12h16M4 17h16"></path>
+</svg>
+</button>
+</div>
 </nav>
-
 <!-- Menu Mobile a Tendina Full-Screen -->
 <div class="mobile-menu" id="mobile-menu">
-  <a href="#about">Chi sono</a>
-  <a href="#experience">Esperienza</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Progetti</a>
-  <a href="#education">Formazione</a>
-  <a href="#travel">Viaggi</a>
-  <a href="#contact">Contatti</a>
-  <a href="Pietro_Calderoni_CV_portfolio.pdf" download style="color: var(--terra); margin-top: 16px;">Scarica CV</a>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#travel">Travel</a>
+<a href="#contact">Contact</a>
+<div aria-label="Language selector" class="mobile-lang-switch"><a class="active" href="/">EN</a><a href="/it/">IT</a></div><a download="" href="Pietro_Calderoni_CV_portfolio.pdf" style="color: var(--terra); margin-top: 16px;">Download CV</a>
 </div>
-
 <!-- ── Hero ── -->
 <section id="hero">
-  <div class="hero-left">
-    <div class="hero-eyebrow">Management Engineering · IT & Operations · Firenze</div>
-    <h1 class="hero-title">
-      Imparo da ogni sistema.<br>Poi cerco come <em>migliorarlo</em>.
+<div class="hero-left">
+<div class="hero-eyebrow">Management Engineering · IT &amp; Operations · Florence</div>
+<h1 class="hero-title">I learn from every system.<br/>Then I look for ways to <em>improve it</em>.
     </h1>
-    <p class="hero-desc">
-      Studente di Ingegneria Gestionale con specializzazione IT. Combino analisi dei dati, automazione dei processi e leadership empatica per risolvere sfide operative complesse.
-    </p>
-    <div class="hero-actions">
-      <a href="#experience" class="btn-primary">Vedi il mio percorso</a>
-      
-      <!-- Pulsante Scarica CV -->
-      <a href="Pietro_Calderoni_CV_portfolio.pdf" class="btn-ghost" download>
-        Scarica CV
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M8 2v9m0 0l-3-3m3 3l3-3m-8 5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-
-      <!-- Pulsante GitHub Hero -->
-      <a href="https://github.com/piecalde" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+<p class="hero-desc">Management Engineering student with an IT specialization. I combine data analysis, process automation, and empathetic leadership to solve complex operational challenges.</p>
+<div class="hero-actions">
+<a class="btn-primary" href="#experience">Explore my path</a>
+<!-- Pulsante Scarica CV -->
+<a class="btn-ghost" download="" href="Pietro_Calderoni_CV_portfolio.pdf">Download CV<svg fill="none" height="16" viewbox="0 0 16 16" width="16">
+<path d="M8 2v9m0 0l-3-3m3 3l3-3m-8 5h10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</a>
+<!-- Pulsante GitHub Hero -->
+<a class="btn-ghost" href="https://github.com/piecalde" rel="noopener noreferrer" target="_blank">
         GitHub
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-      </a>
-      
-      <a href="#contact" class="btn-ghost">
-        Contattami
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-right-name" id="hero-name">Pietro <em>Calderoni</em></div>
-    <div class="hero-image-wrapper">
-      <img src="IMG_2718.jpg" alt="Pietro Calderoni Profilo" class="hero-img">
-    </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      Scorri per scoprire
-    </div>
-  </div>
+        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+</a>
+<a class="btn-ghost" href="#contact">Contact me<svg fill="none" height="16" viewbox="0 0 16 16" width="16">
+<path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="hero-right">
+<div class="hero-right-name" id="hero-name">Pietro <em>Calderoni</em></div>
+<div class="hero-image-wrapper">
+<img alt="Pietro Calderoni profile portrait" class="hero-img" src="IMG_2718.jpg"/>
+</div>
+<div class="hero-scroll">
+<div class="scroll-line"></div>Scroll to explore</div>
+</div>
 </section>
-
 <!-- ── About ── -->
 <section id="about">
-  <div class="section-header reveal">
-    <div class="section-num">01 — Chi sono</div>
-    <h2 class="section-title">Ingegneria & <em>umanità</em></h2>
-  </div>
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <p>
-        Sono uno studente di <strong>Ingegneria Gestionale con specializzazione IT</strong> all'Università di Firenze. La mia passione è usare la tecnologia non come fine, ma come strumento per ottimizzare processi reali e risolvere problemi complessi.
-      </p>
-      <blockquote class="highlight">
-        Combino pensiero analitico e leadership empatica — due approcci che sembrano opposti, ma che in realtà si potenziano a vicenda.
-      </blockquote>
-      <p>
-        Alla FacolCup ho progettato un <strong>sistema Google Drive strutturato</strong> e template di comunicazione automatizzati che hanno ridotto i tempi di processo del 60% — una soluzione ancora attiva all'interno dell'associazione. Ho coordinato un team di più di 20 persone in scenari ad alta pressione, gestendo relazioni istituzionali con il Comune di Firenze, la Regione Toscana e i Ministeri dello Sport, della Salute e dell'Università e della Ricerca.
-      </p>
-    </div>
-    <div class="about-aside reveal reveal-delay-2">
-      <div class="circular-stats-grid">
-        <div class="circle-stat">
-          <div class="circle-wrapper">
-            <svg viewBox="0 0 100 100">
-              <circle class="circle-bg" cx="50" cy="50" r="46"></circle>
-              <circle class="circle-progress" cx="50" cy="50" r="46" data-pct="80"></circle>
-            </svg>
-            <div class="circle-inner">
-              <span class="circle-num" data-val="20" data-prefix="" data-suffix="+">0</span>
-            </div>
-          </div>
-          <div class="circle-label">Persone coordinate<br>sul campo</div>
-        </div>
-        
-        <div class="circle-stat">
-          <div class="circle-wrapper">
-            <svg viewBox="0 0 100 100">
-              <circle class="circle-bg" cx="50" cy="50" r="46"></circle>
-              <circle class="circle-progress" cx="50" cy="50" r="46" data-pct="60"></circle>
-            </svg>
-            <div class="circle-inner">
-              <span class="circle-num" data-val="60" data-prefix="−" data-suffix="%">0</span>
-            </div>
-          </div>
-          <div class="circle-label">Riduzione<br>tempi di processo</div>
-        </div>
-
-        <div class="circle-stat">
-          <div class="circle-wrapper">
-            <svg viewBox="0 0 100 100">
-              <circle class="circle-bg" cx="50" cy="50" r="46"></circle>
-              <circle class="circle-progress" cx="50" cy="50" r="46" data-pct="90"></circle>
-            </svg>
-            <div class="circle-inner">
-              <span class="circle-num" data-val="1.5" data-prefix="" data-suffix="K">0</span>
-            </div>
-          </div>
-          <div class="circle-label">Spettatori<br>finali Viola Park</div>
-        </div>
-
-        <div class="circle-stat">
-          <div class="circle-wrapper">
-            <svg viewBox="0 0 100 100">
-              <circle class="circle-bg" cx="50" cy="50" r="46"></circle>
-              <circle class="circle-progress" cx="50" cy="50" r="46" data-pct="100"></circle>
-            </svg>
-            <div class="circle-inner">
-              <span class="circle-num" data-val="240" data-prefix="" data-suffix="+">0</span>
-            </div>
-          </div>
-          <div class="circle-label">Persone gestite<br>documentalmente</div>
-        </div>
-      </div>
-      <div class="aside-card">
-        <div class="aside-card-label">Lingue</div>
-        <div class="lang-row">
-          <span class="lang-name">Italiano</span>
-          <span class="lang-level">Madrelingua</span>
-        </div>
-        <div class="lang-row">
-          <span class="lang-name">Inglese</span>
-          <span class="lang-level">B2 — CEFR</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="section-header reveal">
+<div class="section-num">01 — About</div>
+<h2 class="section-title">Engineering &amp; <em>humanity</em></h2>
+</div>
+<div class="about-grid">
+<div class="about-text reveal">
+<p>I am a student of <strong>Management Engineering with an IT specialization</strong> at the University of Florence. My passion is using technology not as an end in itself, but as a tool to optimize real-world processes and solve complex problems.</p>
+<blockquote class="highlight">I combine analytical thinking and empathetic leadership — two approaches that may seem opposite, but actually strengthen each other.</blockquote>
+<p>At FacolCup, I designed a <strong>structured Google Drive system</strong> and automated communication templates that reduced process times by 60% — a solution still used within the association. I coordinated a team of more than 20 people in high-pressure scenarios, managing institutional relations with the Municipality of Florence, the Tuscany Region, and the Ministries of Sport, Health, and University and Research.</p>
+</div>
+<div class="about-aside reveal reveal-delay-2">
+<div class="circular-stats-grid">
+<div class="circle-stat">
+<div class="circle-wrapper">
+<svg viewbox="0 0 100 100">
+<circle class="circle-bg" cx="50" cy="50" r="46"></circle>
+<circle class="circle-progress" cx="50" cy="50" data-pct="80" r="46"></circle>
+</svg>
+<div class="circle-inner">
+<span class="circle-num" data-prefix="" data-suffix="+" data-val="20">0</span>
+</div>
+</div>
+<div class="circle-label">People coordinated<br/>on site</div>
+</div>
+<div class="circle-stat">
+<div class="circle-wrapper">
+<svg viewbox="0 0 100 100">
+<circle class="circle-bg" cx="50" cy="50" r="46"></circle>
+<circle class="circle-progress" cx="50" cy="50" data-pct="60" r="46"></circle>
+</svg>
+<div class="circle-inner">
+<span class="circle-num" data-prefix="−" data-suffix="%" data-val="60">0</span>
+</div>
+</div>
+<div class="circle-label">Reduction in<br/>process time</div>
+</div>
+<div class="circle-stat">
+<div class="circle-wrapper">
+<svg viewbox="0 0 100 100">
+<circle class="circle-bg" cx="50" cy="50" r="46"></circle>
+<circle class="circle-progress" cx="50" cy="50" data-pct="90" r="46"></circle>
+</svg>
+<div class="circle-inner">
+<span class="circle-num" data-prefix="" data-suffix="K" data-val="1.5">0</span>
+</div>
+</div>
+<div class="circle-label">Spectators at the<br/>Viola Park finals</div>
+</div>
+<div class="circle-stat">
+<div class="circle-wrapper">
+<svg viewbox="0 0 100 100">
+<circle class="circle-bg" cx="50" cy="50" r="46"></circle>
+<circle class="circle-progress" cx="50" cy="50" data-pct="100" r="46"></circle>
+</svg>
+<div class="circle-inner">
+<span class="circle-num" data-prefix="" data-suffix="+" data-val="240">0</span>
+</div>
+</div>
+<div class="circle-label">People managed<br/>through documentation</div>
+</div>
+</div>
+<div class="aside-card">
+<div class="aside-card-label">Languages</div>
+<div class="lang-row">
+<span class="lang-name">Italian</span>
+<span class="lang-level">Native</span>
+</div>
+<div class="lang-row">
+<span class="lang-name">English</span>
+<span class="lang-level">B2 — CEFR</span>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ── Experience ── -->
 <section id="experience">
-  <div class="section-header reveal">
-    <div class="section-num">02 — Esperienza</div>
-    <h2 class="section-title">Sul <em>campo</em></h2>
-  </div>
-
-  <div class="exp-entry reveal">
-    <div class="exp-meta">
-      <div class="exp-period">Set 2023 — Set 2025</div>
-      <div class="exp-org">FacolCup</div>
-      <div class="exp-badge">Torneo di calcio universitario</div>
-    </div>
-    <div class="exp-body">
-      <div class="exp-role">Operations & Event Management Staff</div>
-      <p class="exp-desc">
-        Contribuito alla gestione ed esecuzione di un importante torneo di calcio a 11 tra le rappresentative delle facoltà dell'Università degli Sudi di Firenze, bilanciando gli studi accademici con esperienza di management in uno scenario altamente complesso.
-      </p>
-      <ul class="exp-items">
-        <li>
-          <strong>Team & Ops</strong>
-          Coordinamento operativo di un team di più di 20 persone. Gestione tecnica dei sistemi VAR sul campo e organizzazione delle finali ufficiali al Viola Park con circa 1.500 spettatori.
-        </li>
-        <li>
-          <strong>Documenti</strong>
-          Organizzazione e validazione della documentazione ufficiale per 8 squadre — procedure per oltre 240 persone, con piena conformità normativa.
-        </li>
-        <li>
-          <strong>Relazioni</strong>
-          Gestione di comunicazioni istituzionali (PEC) con stakeholder di alto livello: Comune di Firenze, Regione Toscana, Ministeri (Sport, Cultura, Università).
-        </li>
-        <li>
-          <strong>Processi</strong>
-          Riduzione dei tempi di processo del 60% tramite sistema Google Drive strutturato e template di comunicazione automatizzati, ancora in uso dall'organizzazione.
-        </li>
-      </ul>
-      <div class="exp-image-gallery">
-        <img src="b8aec0aa-d915-4dd8-a2b6-046118da7cc5.JPG" alt="Evento FacolCup" class="exp-img">
-      </div>
-      <div class="achievement-bar">
-        <div class="achievement-icon">◆</div>
-        <div class="achievement-text">
-          <strong>Riconoscimento ufficiale —</strong> Premiato dal Presidente dell'Associazione Enea De Vita sul palco del Salone dei Cinquecento di Palazzo Vecchio, alla presenza della Sindaca di Firenze Sara Funaro, per il contributo straordinario al successo dell'evento.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="exp-entry reveal reveal-delay-1">
-    <div class="exp-meta">
-      <div class="exp-period">Giu 2021 — Set 2021</div>
-      <div class="exp-org">Museo Stibbert</div>
-      <div class="exp-badge">Campo Estivo</div>
-    </div>
-    <div class="exp-body">
-      <div class="exp-role">Animatore & Staff Organizzativo</div>
-      <p class="exp-desc">
-        Supporto all'organizzazione e alla gestione quotidiana delle attività ludico-ricreative per bambini all'interno del giardino storico del museo.
-      </p>
-      <ul class="exp-items">
-        <li>
-          <strong>Gestione Gruppi</strong>
-          Coordinamento delle attività sportive e di intrattenimento per circa 50 bambini dai 7 ai 13 anni, mantenendo un'attenzione costante sulla loro sicurezza e inclusione.
-        </li>
-        <li>
-          <strong>Operatività</strong>
-          Gestione delle dinamiche quotidiane in un ambiente imprevedibile e all'aperto, supportando il team e curando la comunicazione con le famiglie.
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="section-header reveal">
+<div class="section-num">02 — Experience</div>
+<h2 class="section-title">In the <em>field</em></h2>
+</div>
+<div class="exp-entry reveal">
+<div class="exp-meta">
+<div class="exp-period">Sep 2023 — Sep 2025</div>
+<div class="exp-org">FacolCup</div>
+<div class="exp-badge">University football tournament</div>
+</div>
+<div class="exp-body">
+<div class="exp-role">Operations &amp; Event Management Staff</div>
+<p class="exp-desc">Contributed to the management and execution of a major 11-a-side football tournament between the faculty teams of the University of Florence, balancing academic studies with hands-on management experience in a highly complex environment.</p>
+<ul class="exp-items">
+<li>
+<strong>Team &amp; Ops:</strong> Operational coordination of a team of more than 20 people. Technical management of on-field VAR systems and organization of the official finals at Viola Park with around 1,500 spectators.</li>
+<li>
+<strong>Documents:</strong> Organization and validation of official documentation for 8 teams — procedures covering more than 240 people, with full regulatory compliance.</li>
+<li>
+<strong>Relations:</strong> Management of institutional certified-email communications with high-level stakeholders: Municipality of Florence, Tuscany Region, and Ministries of Sport, Culture, and University.</li>
+<li>
+<strong>Processes:</strong> Reduced process times by 60% through a structured Google Drive system and automated communication templates, still used by the organization.</li>
+</ul>
+<div class="exp-image-gallery">
+<img alt="FacolCup event" class="exp-img" src="b8aec0aa-d915-4dd8-a2b6-046118da7cc5.JPG"/>
+</div>
+<div class="achievement-bar">
+<div class="achievement-icon">◆</div>
+<div class="achievement-text">
+<strong>Official recognition —</strong> Awarded by Association President Enea De Vita on the stage of the Salone dei Cinquecento in Palazzo Vecchio, in the presence of Florence Mayor Sara Funaro, for an outstanding contribution to the success of the event.</div>
+</div>
+</div>
+</div>
+<div class="exp-entry reveal reveal-delay-1">
+<div class="exp-meta">
+<div class="exp-period">Jun 2021 — Sep 2021</div>
+<div class="exp-org">Museo Stibbert</div>
+<div class="exp-badge">Summer camp</div>
+</div>
+<div class="exp-body">
+<div class="exp-role">Activity leader &amp; organizational staff</div>
+<p class="exp-desc">Supported the organization and daily management of recreational activities for children inside the museum’s historic garden.</p>
+<ul class="exp-items">
+<li>
+<strong>Group Management:</strong> Coordinated sports and entertainment activities for around 50 children aged 7 to 13, maintaining constant attention to their safety and inclusion.</li>
+<li>
+<strong>Operations:</strong> Managed daily dynamics in an unpredictable outdoor environment, supporting the team and handling communication with families.</li>
+</ul>
+</div>
+</div>
 </section>
-
 <!-- ── Skills ── -->
 <section id="skills">
-  <div class="section-header reveal">
-    <div class="section-num">03 — Competenze</div>
-    <h2 class="section-title">Hard & <em>soft</em></h2>
-  </div>
-  <div class="skills-grid reveal">
-    <div class="skills-col">
-      <div class="skills-col-label">Hard skills</div>
-      <div class="skill-item">
-        <div class="skill-name">Process Optimization & Mapping</div>
-        <div class="skill-sub">Analisi e ridisegno di workflow operativi</div>
-        <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-name">Data Analysis</div>
-        <div class="skill-sub">Analisi dati per decision making</div>
-        <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-name">Python · Java · SQL</div>
-        <div class="skill-sub">Programmazione e sviluppo — Eclipse IDE</div>
-        <div class="skill-bar-wrap"><div class="skill-bar" style="width:72%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-name">Microsoft Office Suite</div>
-        <div class="skill-sub">Word, Excel, PowerPoint, Canva</div>
-        <div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-name">AI Tools</div>
-        <div class="skill-sub">Claude, ChatGPT, Copilot, Gemini, Perplexity, Grok — uso avanzato</div>
-        <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-name">Comunicazioni istituzionali (PEC)</div>
-        <div class="skill-sub">Relazioni con enti pubblici e stakeholder</div>
-        <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
-      </div>
-    </div>
-    <div class="skills-col">
-      <div class="skills-col-label">Soft skills</div>
-      <div class="soft-grid">
-        <div class="soft-card">
-          <div class="soft-card-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M3 13c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-          </div>
-          <div class="soft-card-name">Leadership empatica &amp; Team Building</div>
-        </div>
-        <div class="soft-card">
-          <div class="soft-card-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h3l2-5 3 10 2-5h2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="soft-card-name">Problem Solving sotto pressione</div>
-        </div>
-        <div class="soft-card">
-          <div class="soft-card-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/></svg>
-          </div>
-          <div class="soft-card-name">Cross-functional Teamwork</div>
-        </div>
-        <div class="soft-card">
-          <div class="soft-card-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-          </div>
-          <div class="soft-card-name">Stakeholder Management</div>
-        </div>
-        <div class="soft-card">
-          <div class="soft-card-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12L8 4l4 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 9.5h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-          </div>
-          <div class="soft-card-name">Adattabilità &amp; Agilità</div>
-        </div>
-        <div class="soft-card">
-          <div class="soft-card-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-          </div>
-          <div class="soft-card-name">Gestione del tempo &amp; priorità</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="section-header reveal">
+<div class="section-num">03 — Skills</div>
+<h2 class="section-title">Hard &amp; <em>soft</em></h2>
+</div>
+<div class="skills-grid reveal">
+<div class="skills-col">
+<div class="skills-col-label">Hard skills</div>
+<div class="skill-item">
+<div class="skill-name">Process Optimization &amp; Mapping</div>
+<div class="skill-sub">Analysis and redesign of operational workflows</div>
+<div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name">Data Analysis</div>
+<div class="skill-sub">Data analysis for decision-making</div>
+<div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name">Python · Java · SQL</div>
+<div class="skill-sub">Programming and development — Eclipse IDE</div>
+<div class="skill-bar-wrap"><div class="skill-bar" style="width:72%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name">Microsoft Office Suite</div>
+<div class="skill-sub">Word, Excel, PowerPoint, Canva</div>
+<div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name">AI Tools</div>
+<div class="skill-sub">Claude, ChatGPT, Copilot, Gemini, Perplexity, Grok — advanced use</div>
+<div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name">Institutional communications (certified email)</div>
+<div class="skill-sub">Relations with public bodies and stakeholders</div>
+<div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+</div>
+</div>
+<div class="skills-col">
+<div class="skills-col-label">Soft skills</div>
+<div class="soft-grid">
+<div class="soft-card">
+<div class="soft-card-icon">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><circle cx="8" cy="5" r="2.5" stroke="currentColor" stroke-width="1.3"></circle><path d="M3 13c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path></svg>
+</div>
+<div class="soft-card-name">Empathetic leadership &amp; Team Building</div>
+</div>
+<div class="soft-card">
+<div class="soft-card-icon">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h3l2-5 3 10 2-5h2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path></svg>
+</div>
+<div class="soft-card-name">Problem-solving under pressure</div>
+</div>
+<div class="soft-card">
+<div class="soft-card-icon">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><rect height="5" rx="1" stroke="currentColor" stroke-width="1.3" width="5" x="2" y="2"></rect><rect height="5" rx="1" stroke="currentColor" stroke-width="1.3" width="5" x="9" y="2"></rect><rect height="5" rx="1" stroke="currentColor" stroke-width="1.3" width="5" x="2" y="9"></rect><rect height="5" rx="1" stroke="currentColor" stroke-width="1.3" width="5" x="9" y="9"></rect></svg>
+</div>
+<div class="soft-card-name">Cross-functional Teamwork</div>
+</div>
+<div class="soft-card">
+<div class="soft-card-icon">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path></svg>
+</div>
+<div class="soft-card-name">Stakeholder Management</div>
+</div>
+<div class="soft-card">
+<div class="soft-card-icon">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M4 12L8 4l4 8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path><path d="M5.5 9.5h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path></svg>
+</div>
+<div class="soft-card-name">Adaptability &amp; Agility</div>
+</div>
+<div class="soft-card">
+<div class="soft-card-icon">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.3"></circle><path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path></svg>
+</div>
+<div class="soft-card-name">Time management &amp; prioritization</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ── Projects & Tech ── -->
 <section id="projects">
-  <div class="section-header reveal">
-    <div class="section-num">04 — Progetti & Tech</div>
-    <h2 class="section-title">Sviluppo & <em>innovazione</em></h2>
-  </div>
-
-  <div class="proj-entry reveal">
-    <div class="proj-meta">
-      <div class="proj-period">2026</div>
-      <div class="proj-org">AI Portfolio</div>
-      <div class="proj-badge">Web Development</div>
-    </div>
-    <div class="proj-body">
-      <div class="proj-role">Creator & Prompt Engineer</div>
-      <p class="proj-desc">
-        Progettazione e sviluppo interattivo di questo sito web adottando un approccio <em>Human-in-the-Loop</em>, in cui l'intuizione ingegneristica e il design editoriale hanno guidato attivamente la generazione del codice tramite modelli di Intelligenza Artificiale.
-      </p>
-      <ul class="proj-items">
-        <li>
-          <strong>Architettura</strong>
-          Definizione rigorosa della struttura informativa, della User Experience e dello stile visivo, partendo da zero senza l'ausilio di template pre-confezionati.
-        </li>
-        <li>
-          <strong>Prompting</strong>
-          Utilizzo di AI conversazionale per la scrittura iterativa di HTML, CSS e JavaScript puro, rifinendo i prompt per ottenere un codice semantico, leggero e responsivo.
-        </li>
-        <li>
-          <strong>Risultato</strong>
-          Sviluppo di un'interfaccia interattiva con animazioni basate sullo scorrimento e grafica vettoriale ottimizzata, unendo la visione strategica all'efficienza degli strumenti AI avanzati.
-        </li>
-      </ul>
-      <div class="prompt-box">
-        <div class="prompt-header">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-          System Prompt & Workflow
+<div class="section-header reveal">
+<div class="section-num">04 — Projects &amp; Tech</div>
+<h2 class="section-title">Development &amp; <em>innovation</em></h2>
+</div>
+<div class="proj-entry reveal">
+<div class="proj-meta">
+<div class="proj-period">2026</div>
+<div class="proj-org">AI Portfolio</div>
+<div class="proj-badge">Web Development</div>
+</div>
+<div class="proj-body">
+<div class="proj-role">Creator &amp; Prompt Engineer</div>
+<p class="proj-desc">Interactive design and development of this website using a <em>Human-in-the-Loop</em> approach, where engineering intuition and editorial design actively guided code generation through Artificial Intelligence models.</p>
+<ul class="proj-items">
+<li>
+<strong>Architecture:</strong> Rigorous definition of the information architecture, user experience, and visual style, starting from scratch without pre-made templates.</li>
+<li>
+<strong>Prompting:</strong> Use of conversational AI to iteratively write HTML, CSS, and pure JavaScript, refining prompts to obtain semantic, lightweight, and responsive code.</li>
+<li>
+<strong>Outcome:</strong> Development of an interactive interface with scroll-based animations and optimized vector graphics, combining strategic vision with the efficiency of advanced AI tools.</li>
+</ul>
+<div class="prompt-box">
+<div class="prompt-header">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>System Prompt &amp; Workflow</div>
+<div class="prompt-code">
+          "Act as a Senior Front-End Developer and an Art Director expert in UI/UX Editorial Design. Your task is to write the complete code for a personal portfolio website for a student of "Management Engineering with an IT specialization". The entire site MUST be contained in a single "index.html" file, including semantic HTML, pure CSS (no frameworks like Tailwind or Bootstrap), and Vanilla JavaScript. The goal is to convey a perfect balance between "Engineering &amp; Humanity": an analytical, measurable, and process-oriented approach, combined with empathy, elegance, and leadership. Strictly follow these directives:<br/><br/>
+          1. DESIGN SYSTEM AND TYPOGRAPHY<br/>
+          Create a :root with the following CSS Custom Properties to maintain an elegant color palette, inspired by nature and ink:<br/>
+          - Base Colors: Ivory (`#F8F1E4`, `#EDE5D5`) for warm backgrounds.<br/>
+          - Text/Dark Colors: Deep Ink/Forest (`#2A4B3C`, `#345948`) for contrast, dark backgrounds, and primary text.<br/>
+          - Accent Colors: Earth/Golden Amber (`#D49A47`) for call-to-actions, hovers, graphic details, and icons.<br/>
+          - Borders and Stone: Desaturated tones (`#738574`, `#E4DACD`) for light borders and secondary texts.<br/><br/>
+          Import two Google Fonts:<br/>
+          - "Cormorant Garamond" (serif) for main titles and italic details (elegant emphasis).<br/>
+          - "DM Sans" (sans-serif) for paragraph texts, buttons, and data, ensuring maximum technical readability.<br/><br/>
+          2. GLOBAL COMPONENTS AND LAYOUT<br/>
+          - Use an asymmetrical layout: play with grids (CSS Grid) often dividing sections into proportions like 5fr / 4fr.<br/>
+          - Implement a custom cursor (an amber dot) that follows the mouse via JS.<br/>
+          - Navigation must be "sticky" at the top, with a glassmorphism effect (backdrop-filter: blur), textual logo on the left, links in the center, and a CTA button on the right. Include a hamburger menu for mobile with a full-screen pop-up animation.<br/><br/>
+          3. SITE SECTIONS AND CONTENT (Architecture)<br/>
+          Build the following sections, each with a unique identifier (e.g., `id="hero"`):<br/>
+          1. **Hero Section:** Dark background (Ink). Layout divided in half. On the left an "eyebrow text" in small caps, a giant title ("I optimize processes. I lead teams." with some words in italics), a brief description, and buttons for CV and Contacts. On the right, a profile photo with a sepia/grayscale filter that returns to color on hover.<br/>
+          2. **About:** Asymmetrical layout. On the left the introductory text. On the right, implement a grid of circular statistics made with native SVG (`&lt;circle&gt;`). The circular bars must fill up animating via JS (Intersection Observer) and the numbers inside must count from 0 to the final value (e.g., +20 people, -60% times).<br/>
+          3. **Experience:** Dark background. A vertical "timeline" layout. Each experience (e.g., FacolCup, Museo Stibbert) must have the date on the left and the content on the right. Separate the highlights of the experience with a structured list (Team, Documents, Relations, Processes). Add an image gallery and an "Achievement" box at the bottom.<br/>
+          4. **Skills:** Light background. On the left the Hard Skills with horizontal progress bars that extend via JS on scroll. On the right the Soft Skills, represented by a grid of cards containing minimal SVG icons and text.<br/>
+          5. **Projects &amp; Tech:** Timeline structure similar to Experience.<br/>
+          - For the "AI Portfolio" project: Insert a dark box that visually shows a simulated "System Prompt".<br/>
+          - For the "Software/Java" project: Implement a horizontal image slider perfectly functioning in pure JS (with prev/next navigation arrows).<br/>
+          - For the "Business Case (Chinéo)" project: Create native UI components in CSS Grid to show a SWOT Analysis (4 quadrants) and a Lean Canvas (grid with 5 columns and 2 rows). They must look like management reports integrated into the site.<br/>
+          6. **Education:** Interactive cards for universities. The card for the current degree must be expandable (accordion click via JS) to show the list of exams divided by academic years.<br/>
+          7. **Travel:** A grid divided into "Visited" and "Wishlist" with the relative emoji flags. Add a complex animation: a huge SVG airplane that, on scroll, slides from left to right revealing the content hidden under a "curtain" (curtain effect).<br/>
+          8. **Contacts &amp; Footer:** Very clean final section, dark backgrounds, large impactful text "Let's talk.", and shaped buttons for Email and LinkedIn.<br/><br/>
+          4. ANIMATIONS AND JAVASCRIPT LOGIC<br/>
+          - **Scroll Reveals:** Use the `IntersectionObserver` APIs to make sections appear fading from bottom to top (`fadeUp`) in a staggered way (`delay`).<br/>
+          - **Counters and Charts:** Write custom JS logic to animate the `stroke-dashoffset` attribute in circular SVGs and a `setInterval` for the incremental animation of numbers.<br/>
+          - **Slider:** Logic to scroll the horizontal overflow-x on arrow click.<br/>
+          - **Navigation:** Update the active link in the nav bar based on scroll position.<br/><br/>
+          5. FINAL TECHNICAL CONSTRAINTS<br/>
+          - CSS strictly in the `&lt;style&gt;` tag, JS in the `&lt;script&gt;` tag at the bottom of the file.<br/>
+          - The design must be perfectly "Mobile First" / Responsive via Media Queries, collapsing the grids into a single column and activating the hamburger menu on screens under 900px.<br/>
+          - Write clean, highly commented, and production-ready code. Maximum attention to micro-interactive details (hover states on buttons, smooth transitions)."
         </div>
-        <div class="prompt-code">
-          "Agisci come un Senior Front-End Developer e un Art Director esperto in UI/UX Design editoriale. Il tuo compito è scrivere il codice completo per un sito web portfolio personale per uno studente di "Ingegneria Gestionale con specializzazione IT". L'intero sito DEVE essere contenuto in un singolo file "index.html", comprendendo HTML semantico, CSS puro (niente framework come Tailwind o Bootstrap) e Vanilla JavaScript. L'obiettivo è trasmettere un equilibrio perfetto tra "Ingegneria & Umanità": un approccio analitico, misurabile e orientato ai processi, combinato con empatia, eleganza e leadership. Attieniti rigorosamente alle seguenti direttive:<br><br>
-          1. DESIGN SYSTEM E TIPOGRAFIA<br>
-          Crea un :root con le seguenti CSS Custom Properties per mantenere una palette colori elegante, ispirata alla natura e all'inchiostro:<br>
-          - Colori Base: Ivory (`#F8F1E4`, `#EDE5D5`) per i background caldi.<br>
-          - Colori Testo/Scuro: Deep Ink/Bosco (`#2A4B3C`, `#345948`) per contrasto, sfondi scuri e testi primari.<br>
-          - Colori Accento: Terra/Ambra Dorata (`#D49A47`) per call-to-action, hover, dettagli grafici e icone.<br>
-          - Bordi e Pietra: Toni desaturati (`#738574`, `#E4DACD`) per bordi leggeri e testi secondari.<br><br>
-          Importa due Google Fonts:<br>
-          - "Cormorant Garamond" (serif) per i titoli principali e i dettagli in corsivo (enfasi elegante).<br>
-          - "DM Sans" (sans-serif) per i testi dei paragrafi, i bottoni e i dati, garantendo massima leggibilità tecnica.<br><br>
-          2. COMPONENTI GLOBALI E LAYOUT<br>
-          - Utilizza un layout asimmetrico: gioca con le griglie (CSS Grid) dividendo spesso le sezioni in proporzioni come 5fr / 4fr.<br>
-          - Implementa un custom cursor (un puntino color ambra) che segue il mouse tramite JS.<br>
-          - La navigazione deve essere "sticky" in alto, con un effetto glassmorphism (backdrop-filter: blur), logo testuale a sinistra, link al centro e un bottone CTA a destra. Includi un menu hamburger per il mobile con animazione a comparsa full-screen.<br><br>
-          3. SEZIONI DEL SITO E CONTENUTI (Architettura)<br>
-          Costruisci le seguenti sezioni, ognuna con un identificativo univoco (es. `id="hero"`):<br>
-          1. **Hero Section:** Sfondo scuro (Ink). Layout diviso a metà. A sinistra un "eyebrow text" in maiuscoletto, un titolo gigante ("Ottimizzo processi. Guido team." con alcune parole in corsivo), una breve descrizione e bottoni per CV e Contatti. A destra, una foto profilo con un filtro seppia/scala di grigi che torna a colori al passaggio del mouse.<br>
-          2. **About (Chi sono):** Layout asimmetrico. A sinistra il testo introduttivo. A destra, implementa una griglia di statistiche circolari realizzate con SVG nativo (`&lt;circle&gt;`). Le barre circolari devono riempirsi animandosi via JS (Intersection Observer) e i numeri all'interno devono contare da 0 al valore finale (es. +20 persone, -60% tempi).<br>
-          3. **Esperienza:** Sfondo scuro. Un layout a "timeline" verticale. Ogni esperienza (es. FacolCup, Museo Stibbert) deve avere la data a sinistra e il contenuto a destra. Separa i punti salienti dell'esperienza con una lista strutturata (Team, Documenti, Relazioni, Processi). Aggiungi una galleria immagini e un box "Achievement" in basso.<br>
-          4. **Competenze (Skills):** Sfondo chiaro. A sinistra le Hard Skills con barre di progresso orizzontali che si estendono via JS allo scroll. A destra le Soft Skills, rappresentate da una griglia di card contenenti icone SVG minimali e testo.<br>
-          5. **Progetti & Tech:** Struttura a timeline simile all'Esperienza.<br>
-          - Per il progetto "AI Portfolio": Inserisci un box scuro che mostri visivamente un "System Prompt" simulato.<br>
-          - Per il progetto "Software/Java": Implementa uno slider di immagini orizzontale perfettamente funzionante in puro JS (con frecce di navigazione prev/next).<br>
-          - Per il progetto "Business Case (Chinéo)": Crea dei componenti UI nativi in CSS Grid per mostrare una SWOT Analysis (4 quadranti) e un Lean Canvas (griglia a 5 colonne e 2 righe). Devono sembrare report gestionali integrati nel sito.<br>
-          6. **Formazione:** Card interattive per le università. La card della laurea in corso deve essere espandibile (accordion click via JS) per mostrare l'elenco degli esami divisi per anni accademici.<br>
-          7. **Viaggi:** Una griglia divisa in "Visitati" e "Wishlist" con le relative bandiere emoji. Aggiungi un'animazione complessa: un enorme aereo in SVG che, allo scroll, scorre da sinistra a destra rivelando i contenuti nascosti sotto una "tenda" (curtain effect).<br>
-          8. **Contatti & Footer:** Sezione finale molto pulita, sfondi scuri, testo grande d'impatto "Parliamoci.", e pulsanti sagomati per Email e LinkedIn.<br><br>
-          4. ANIMAZIONI E JAVASCRIPT LOGIC<br>
-          - **Scroll Reveals:** Usa le API di `IntersectionObserver` per far apparire le sezioni sfumando dal basso verso l'alto (`fadeUp`) in modo scaglionato (`delay`).<br>
-          - **Contatori e Grafici:** Scrivi logica JS personalizzata per animare l'attributo `stroke-dashoffset` negli SVG circolari e un `setInterval` per l'animazione incrementale dei numeri.<br>
-          - **Slider:** Logica per scorrere l'overflow-x orizzontale al click delle frecce.<br>
-          - **Navigazione:** Aggiornamento del link attivo nella nav bar basato sulla posizione dello scroll.<br><br>
-          5. VINCOLI TECNICI FINALI<br>
-          - CSS rigorosamente nel tag `&lt;style&gt;`, JS nel tag `&lt;script&gt;` in fondo al file.<br>
-          - Il design deve essere perfettamente "Mobile First" / Responsive tramite Media Queries, collassando le griglie in una singola colonna e attivando il menu hamburger su schermi inferiori a 900px.<br>
-          - Scrivi codice pulito, altamente commentato e pronto per la produzione. Massima attenzione ai dettagli micro-interattivi (hover states sui bottoni, transizioni dolci)."
-        </div>
-        <p class="prompt-note">
-          <em>Nota sul processo:</em> A seguito di questo prompt iniziale (ottimizzato a sua volta tramite IA), ho adottato un approccio iterativo guidato dall'umano. Ho perfezionato l'architettura, integrato i testi definitivi e curato ogni singolo dettaglio, conducendo test continui su palette colori e stili tipografici fino al raggiungimento del perfetto equilibrio visivo.
-        </p>
-        <div class="ai-tools">
-          <span class="ai-tag">Gemini 3.1 Pro Esteso</span>
-          <span class="ai-tag">Claude Sonnet 4.6 Adattivo </span>
-          <span class="ai-tag">ChatGPT</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SPAZIO PROGETTO: HACKATHON & CERTIFICAZIONE -->
-  <div class="proj-entry reveal reveal-delay-1">
-    <div class="proj-meta">
-      <div class="proj-period">Maggio 2026</div>
-      <div class="proj-org">Progetto ALMA & Unifi</div>
-      <div class="proj-badge">Hackathon & Certificazione</div>
-    </div>
-    <div class="proj-body">
-      <div class="proj-role">Team Member & AI Analyst</div>
-      <p class="proj-desc">
-        Partecipazione all'hackathon <em>"StudIAre con l'IA. Dalle scorciatoie all'uso critico"</em> presso il Palazzo degli Affari di Firenze e completamento del percorso formativo certificato sull'Intelligenza Artificiale.
-      </p>
-      <ul class="proj-items">
-        <li>
-          <strong>Hackathon & Concept</strong>
-          Ideazione e progettazione in team di due artefatti digitali per l'integrazione nella campagna di sensibilizzazione ufficiale dell'Ateneo sull'uso etico e critico dell'IA sia nel contesto accademico che lavorativo e personale.
-        </li>
-        <li>
-          <strong>Certificazione ALMA</strong>
-          <a href="attestato-1.png" target="_blank" rel="noopener noreferrer" class="cert-img-wrapper" aria-label="Visualizza attestato ingrandito">
-            <img src="attestato-1.png" alt="Attestato Certificazione ALMA">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- SPAZIO PROGETTO: INGEGNERIA DEL SOFTWARE -->
-  <div class="proj-entry reveal reveal-delay-2">
-    <div class="proj-meta">
-      <div class="proj-period">2025</div>
-      <div class="proj-org">Progetto Software</div>
-      <div class="proj-badge">Java / UML</div>
-    </div>
-    <div class="proj-body">
-      <div class="proj-role">Sviluppatore & Analista di Sistema</div>
-      <p class="proj-desc">
-        Progetto di gruppo sviluppato nell'ambito del corso di Software Engineering, incentrato sulla progettazione di un sistema software per la gestione delle visite guidate di un museo.
-Il sistema consente la gestione di visite, sale, guide turistiche, prenotazioni e pagamenti online, con accesso differenziato per visitatori, guide e operatori museali, garantendo requisiti di sicurezza, scalabilità e affidabilità.
-      </p>
-      <ul class="proj-items">
-        <li>
-          <strong>Modellazione</strong>
-        Il lavoro ha incluso la definizione del modello concettuale del dominio, la raccolta e formalizzazione dei requisiti funzionali e non funzionali, la modellazione dei casi d'uso e la progettazione del diagramma delle classi.
-        </li>
-        <li>
-          <strong>Sviluppo</strong>
-          Scrittura del codice in Java applicando i principi dell'Object-Oriented Programming (OOP), UML (use case diagram, class diagram), analisi dei requisiti.
-        </li>
-      </ul>
-      
-      <div class="proj-slider-wrapper">
-        <button class="slider-arrow prev" onclick="scrollSlider(-1)" aria-label="Immagine precedente">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12L6 8l4-4"/></svg>
-        </button>
-        
-        <div class="proj-slider-track" id="software-slider-track">
-          <div class="proj-slider-slide">
-            <img src="modello concettuale.png" alt="Modello Concettuale UML" class="proj-img">
-          </div>
-          <div class="proj-slider-slide">
-            <img src="class diagram.png" alt="Class Diagram UML" class="proj-img">
-          </div>
-          <div class="proj-slider-slide">
-            <img src="use case.png" alt="Use Case Diagram UML" class="proj-img">
-          </div>
-        </div>
-
-        <button class="slider-arrow next" onclick="scrollSlider(1)" aria-label="Immagine successiva">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12l4-4-4-4"/></svg>
-        </button>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- SPAZIO PROGETTO: ARDUINO -->
-  <div class="proj-entry reveal reveal-delay-3">
-    <div class="proj-meta">
-      <div class="proj-period">2024</div>
-      <div class="proj-org">Progetto Arduino</div>
-      <div class="proj-badge">C++ / Hardware</div>
-    </div>
-    <div class="proj-body">
-      <div class="proj-role">Progettista Hardware e Firmware</div>
-      <p class="proj-desc">
-        Sviluppo di un sistema di rilevamento incendi basato su microcontrollore ESP32 WROOM-32, integrando la progettazione del circuito elettronico con la stesura del firmware per l'acquisizione dei dati sensoriali, l'elaborazione in tempo reale e la gestione delle risposte di allarme.
-      </p>
-      <ul class="proj-items">
-        <li>
-          <strong>Hardware</strong>
-          Progettazione dello schema elettrico e assemblaggio fisico del circuito, comprendente: un sensore di fiamma KY-026 IR 760–1100 nm per il rilevamento ottico delle fiamme, un LED rosso per l'allarme ottico e un buzzer piezoelettrico passivo come attuatore acustico di allarme. L'unità di controllo centrale è una scheda ESP32 WROOM-32 con connettività Wi-Fi integrata.
-        </li>
-        <li>
-          <strong>Software</strong>
-         Programmazione del microcontrollore ESP32 in linguaggio C++ tramite Arduino IDE per la lettura degli input digitali e analogici dai sensori, l'implementazione della logica di soglia per il rilevamento eventi, il controllo PWM del buzzer di allarme e la trasmissione dei dati via Wi-Fi a Firebase Realtime Database, con visualizzazione delle notifiche di allarme in tempo reale su una pagina web HTML collegata al database.
-        </li>
-      </ul>
-      <div class="proj-image-gallery">
-        <img src="arduino_schema.png" alt="Schema Hardware Arduino" class="proj-img">
-      </div>
-    </div>
-  </div>
-
-  <div class="proj-entry reveal reveal-delay-4">
-    <div class="proj-meta">
-      <div class="proj-period">Nov 2024 — Dic 2024</div>
-      <div class="proj-org">Chinéo</div>
-      <div class="proj-badge">Business case accademico</div>
-    </div>
-    <div class="proj-body">
-      <div class="proj-role">Chinéo — L'onda verde che salva vite.</div>
-      <p class="proj-desc">
-        <strong>Business Plan per una startup simulata in ambito Smart Mobility e IoT.</strong><br><br>
-        In sintesi: Un algoritmo predittivo integrato con i sistemi semaforici urbani e le centrali del 118 per azzerare il traffico di fronte ai mezzi di soccorso, riducendo i tempi di intervento.
-      </p>
-      
-      <!-- Accordion Espandibile per il Report di Chinéo -->
-      <div class="chineo-report expandable" onclick="this.classList.toggle('expanded')">
-        <div class="chineo-report-header">
-          <span>Vedi estratto Business Plan (SWOT & Lean Canvas)</span>
-          <svg class="chineo-expand-icon" width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6L8 10L12 6"/>
-          </svg>
-        </div>
-        <div class="chineo-report-content">
-          <div class="chineo-report-inner">
-            <div class="chineo-report-body">
-              
-              <div class="chineo-ps-grid">
-                <div>
-                  <div class="chineo-label">Il Problema</div>
-                  <div class="chineo-text">I tempi medi di arrivo di un'ambulanza in Italia variano tra 16 e 28 minuti a causa del traffico urbano.</div>
-                </div>
-                <div>
-                  <div class="chineo-label">La Soluzione</div>
-                  <div class="chineo-text">Un software (attualmente a TRL 4) che elabora i dati GPS del mezzo e i sensori IoT urbani per creare un "canale verde" dinamico, garantendo sicurezza e velocità.</div>
-                </div>
-              </div>
-
-              <ul class="proj-items" style="margin-bottom: 24px; border-bottom: none;">
-                <li>
-                  <strong>Business Modeling</strong>
-                  Sviluppo del Lean Canvas e SWOT Analysis (consultabili di seguito).
-                </li>
-                <li>
-                  <strong>Pianificazione Finanziaria</strong>
-                  Costruzione del piano costi/ricavi a 3 anni e calcolo del Break Even Point (raggiunto alla 21esima mensilità).
-                </li>
-              </ul>
-
-              <div class="chineo-diagrams">
-                
-                <div class="diagram-wrapper">
-                  <div class="diagram-title">SWOT Analysis</div>
-                  <div class="swot-grid">
-                    <div class="swot-cell">
-                      <div class="swot-letter">S</div>
-                      <div class="swot-cell-text">
-                        <strong>Strengths:</strong>
-                        <ul>
-                          <li>Software già parzialmente sviluppato con minimi costi</li>
-                          <li>Bassi costi di mantenimento post implementazione</li>
-                          <li>Accordi maturati con l'Area Metropolitana di Firenze</li>
-                          <li>Tecnologia all'avanguardia adattabile ad ogni area urbana</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="swot-cell">
-                      <div class="swot-letter">W</div>
-                      <div class="swot-cell-text">
-                        <strong>Weaknesses:</strong>
-                        <ul>
-                          <li>Business non indipendente</li>
-                          <li>Assenza di revenue streams alternative</li>
-                          <li>Team imprenditoriale inesperto</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="swot-cell">
-                      <div class="swot-letter">O</div>
-                      <div class="swot-cell-text">
-                        <strong>Opportunities:</strong>
-                        <ul>
-                          <li>Alte barriere in ingresso per possibili entranti</li>
-                          <li>Pochi competitors esistenti</li>
-                          <li>In linea con le tematiche di Sicurezza Stradale europee</li>
-                          <li>Espandibile in tutta la Regione Toscana e in altre grandi aree urbane</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="swot-cell">
-                      <div class="swot-letter">T</div>
-                      <div class="swot-cell-text">
-                        <strong>Threats:</strong>
-                        <ul>
-                          <li>Efficientamento del Trasporto Pubblico Locale (TPL), minori problemi nel futuro</li>
-                          <li>Potere contrattuale dei clienti</li>
-                          <li>Potenziale espansione di competitori già istituiti oltre oceano</li>
-                          <li>Alternative di velocizzazione del primo soccorso</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="diagram-wrapper">
-                  <div class="diagram-title">Lean Canvas</div>
-                  <div class="lean-canvas">
-                    <div class="lc-box lc-tall">
-                      <div class="lc-title">Problem</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Rallentamento dei mezzi di soccorso, per congestione delle strade</li>
-                          <li>Scarsa sicurezza in situazioni di soccorso stradale</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="lc-box">
-                      <div class="lc-title">Solution</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Ottimizzazione delle tempistiche di soccorso</li>
-                          <li>Cambiamento on-time della segnaletica verticale</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="lc-box lc-tall">
-                      <div class="lc-title">Value Proposition</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Prestazione: migliorare i tempi di trasporto dei mezzi</li>
-                          <li>Risk Reduction: diminuire il rischio di morti in ambulanza</li>
-                          <li>Personalizzazione implementazione specifica per area</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="lc-box">
-                      <div class="lc-title">Unfair Advantage</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Software informatico innovativo</li>
-                          <li>Partnership con l'amministrazione pubblica</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="lc-box lc-tall">
-                      <div class="lc-title">Customer Segments</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Amministrazione pubblica</li>
-                          <li>Assessorati alla mobilità</li>
-                          <li><em>Early Adopters:</em> Area Metropolitana di Firenze</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="lc-box">
-                      <div class="lc-title">Key Metrics</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Tempo di pre-ospedalizzazione (LEA)</li>
-                          <li>Numero di siti implementati</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="lc-box">
-                      <div class="lc-title">Channels</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Public relations e modelli di simulazione</li>
-                          <li>Partenariato pubblico privato (PPP)</li>
-                          <li>Assistenza post-vendita</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="lean-canvas-bottom">
-                    <div class="lc-box">
-                      <div class="lc-title">Cost Structure</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Stipendi e Consulenza legali</li>
-                          <li>Costi di sviluppo e mantenimento del software</li>
-                          <li>Costi di relazione pubblica</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="lc-box">
-                      <div class="lc-title">Revenue Streams</div>
-                      <div class="lc-content">
-                        <ul>
-                          <li>Ricavi fissi sull'impiego del sistema</li>
-                          <li>Ricavi variabili proporzionali al tempo risparmiato (miglioramento LEA)</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fine Accordion Espandibile -->
-
-      <!-- Riquadro Dichiarazione Etica IA (estratto da pagina 2 del PDF) -->
-      <div class="prompt-box" style="margin-top: 24px;">
-        <div class="prompt-header">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-          Impiego Etico dell'Intelligenza Artificiale
-        </div>
-        <div class="prompt-code" style="max-height: none;">
-          "Questa relazione è stata interamente prodotta dai sottoscritti autori, tramite ricerca, selezione, discussione e interpretazione di informazioni inerenti il contesto competitivo, i risultati, le strategie e i modelli di business del caso di studio assegnato. [...] Il lavoro è conforme ai principi di integrità accademica sull'utilizzo degli strumenti di Intelligenza Artificiale, e in particolare dei linguaggi generativi LLM."
-        </div>
-        <div class="prompt-note">
-          <strong>Applicazioni specifiche nel progetto (via ChatGPT):</strong>
-          <ul style="padding-left: 16px; margin-top: 6px; list-style-type: disc;">
-            <li>Suggerire idee e modalità di approfondimento, fornire esempi specifici o generici;</li>
-            <li>Facilitare ricerca e identificazione di materiale di analisi;</li>
-            <li>Indicare errori grammaticali e ortografici e opportunità di miglioramento semantico e lessicale.</li>
-          </ul>
-        </div>
-        <div class="ai-tools">
-          <span class="ai-tag">ChatGPT</span>
-          <span class="ai-tag">Integrità Accademica</span>
-          <span class="ai-tag">Ricerca & Analisi</span>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+<p class="prompt-note">
+<em>Process Note:</em> After this initial prompt, itself optimized through AI, I adopted a human-guided iterative approach. I refined the architecture, integrated the final copy, and curated every detail, continuously testing color palettes and typographic styles until reaching the right visual balance.</p>
+<div class="ai-tools">
+<span class="ai-tag">Gemini 3.1 Pro Esteso</span>
+<span class="ai-tag">Claude Sonnet 4.6 Adattivo </span>
+<span class="ai-tag">ChatGPT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SPAZIO PROGETTO: HACKATHON & CERTIFICAZIONE -->
+<div class="proj-entry reveal reveal-delay-1">
+<div class="proj-meta">
+<div class="proj-period">May 2026</div>
+<div class="proj-org">ALMA &amp; UniFi Project</div>
+<div class="proj-badge">Hackathon &amp; Certification</div>
+</div>
+<div class="proj-body">
+<div class="proj-role">Team Member &amp; AI Analyst</div>
+<p class="proj-desc">Participation in the hackathon <em>"StudIAre con l'IA. Dalle scorciatoie all'uso critico"</em> at Palazzo degli Affari in Florence and completion of a certified training path on Artificial Intelligence.</p>
+<ul class="proj-items">
+<li>
+<strong>Hackathon &amp; Concept:</strong> Team ideation and design of two digital artifacts for integration into the University’s official awareness campaign on the ethical and critical use of AI in academic, professional, and personal contexts.</li>
+<li>
+<strong>ALMA Certification:</strong>
+<a aria-label="View enlarged certificate" class="cert-img-wrapper" href="attestato-1.png" rel="noopener noreferrer" target="_blank">
+<img alt="ALMA Certification Certificate" src="attestato-1.png"/>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- SPAZIO PROGETTO: INGEGNERIA DEL SOFTWARE -->
+<div class="proj-entry reveal reveal-delay-2">
+<div class="proj-meta">
+<div class="proj-period">2025</div>
+<div class="proj-org">Software Project</div>
+<div class="proj-badge">Java / UML</div>
+</div>
+<div class="proj-body">
+<div class="proj-role">Developer &amp; System Analyst</div>
+<p class="proj-desc">Group project developed within the Software Engineering course, focused on designing a software system for managing museum guided tours. The system enables the management of tours, rooms, tour guides, bookings, and online payments, with differentiated access for visitors, guides, and museum operators, ensuring security, scalability, and reliability requirements.</p>
+<ul class="proj-items">
+<li>
+<strong>Modeling:</strong> The work included defining the domain conceptual model, collecting and formalizing functional and non-functional requirements, modeling use cases, and designing the class diagram.</li>
+<li>
+<strong>Development:</strong> Java coding applying Object-Oriented Programming (OOP) principles, UML (use case diagram, class diagram), and requirements analysis.</li>
+</ul>
+<div class="proj-slider-wrapper">
+<button aria-label="Previous image" class="slider-arrow prev" onclick="scrollSlider(-1)">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 16 16" width="16"><path d="M10 12L6 8l4-4"></path></svg>
+</button>
+<div class="proj-slider-track" id="software-slider-track">
+<div class="proj-slider-slide">
+<img alt="UML Conceptual Model" class="proj-img" src="modello concettuale.png"/>
+</div>
+<div class="proj-slider-slide">
+<img alt="UML Class Diagram" class="proj-img" src="class diagram.png"/>
+</div>
+<div class="proj-slider-slide">
+<img alt="UML Use Case Diagram" class="proj-img" src="use case.png"/>
+</div>
+</div>
+<button aria-label="Next image" class="slider-arrow next" onclick="scrollSlider(1)">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 16 16" width="16"><path d="M6 12l4-4-4-4"></path></svg>
+</button>
+</div>
+</div>
+</div>
+<!-- SPAZIO PROGETTO: ARDUINO -->
+<div class="proj-entry reveal reveal-delay-3">
+<div class="proj-meta">
+<div class="proj-period">2024</div>
+<div class="proj-org">Arduino Project</div>
+<div class="proj-badge">C++ / Hardware</div>
+</div>
+<div class="proj-body">
+<div class="proj-role">Hardware and Firmware Designer</div>
+<p class="proj-desc">Development of a fire detection system based on an ESP32 WROOM-32 microcontroller, integrating electronic circuit design with firmware development for sensor data acquisition, real-time processing, and alarm response management.</p>
+<ul class="proj-items">
+<li>
+<strong>Hardware:</strong> Electrical schematic design and physical circuit assembly, including: a KY-026 IR 760–1100 nm flame sensor for optical flame detection, a red LED for visual alarm, and a passive piezoelectric buzzer as an acoustic alarm actuator. The central control unit is an ESP32 WROOM-32 board with integrated Wi-Fi connectivity.</li>
+<li>
+<strong>Software:</strong> Programming of the ESP32 microcontroller in C++ through Arduino IDE to read digital and analog sensor inputs, implement threshold logic for event detection, control the alarm buzzer through PWM, and transmit data via Wi-Fi to Firebase Realtime Database, with real-time alarm notifications displayed on an HTML web page connected to the database.</li>
+</ul>
+<div class="proj-image-gallery">
+<img alt="Arduino Hardware Schematic" class="proj-img" src="arduino_schema.png"/>
+</div>
+</div>
+</div>
+<div class="proj-entry reveal reveal-delay-4">
+<div class="proj-meta">
+<div class="proj-period">Nov 2024 — Dec 2024</div>
+<div class="proj-org">Chinéo</div>
+<div class="proj-badge">Academic business case</div>
+</div>
+<div class="proj-body">
+<div class="proj-role">Chinéo — The green wave that saves lives.</div>
+<p class="proj-desc">
+<strong>Business plan for a simulated startup in Smart Mobility and IoT.</strong><br/><br/>In short: a predictive algorithm integrated with urban traffic light systems and emergency dispatch centers to clear traffic in front of emergency vehicles, reducing response times.</p>
+<!-- Accordion Espandibile per il Report di Chinéo -->
+<div class="chineo-report expandable" onclick="this.classList.toggle('expanded')">
+<div class="chineo-report-header">
+<span>View Business Plan excerpt (SWOT &amp; Lean Canvas)</span>
+<svg class="chineo-expand-icon" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 16 16" width="12">
+<path d="M4 6L8 10L12 6"></path>
+</svg>
+</div>
+<div class="chineo-report-content">
+<div class="chineo-report-inner">
+<div class="chineo-report-body">
+<div class="chineo-ps-grid">
+<div>
+<div class="chineo-label">The Problem</div>
+<div class="chineo-text">Average ambulance arrival times in Italy range from 16 to 28 minutes due to urban traffic.</div>
+</div>
+<div>
+<div class="chineo-label">The Solution</div>
+<div class="chineo-text">A software solution (currently at TRL 4) that processes vehicle GPS data and urban IoT sensors to create a dynamic “green corridor,” ensuring safety and speed.</div>
+</div>
+</div>
+<ul class="proj-items" style="margin-bottom: 24px; border-bottom: none;">
+<li>
+<strong>Business Modeling:</strong> Development of the Lean Canvas and SWOT Analysis (available below).</li>
+<li>
+<strong>Financial Planning:</strong> Construction of a 3-year cost/revenue plan and Break-Even Point calculation (reached in month 21).</li>
+</ul>
+<div class="chineo-diagrams">
+<div class="diagram-wrapper">
+<div class="diagram-title">SWOT Analysis</div>
+<div class="swot-grid">
+<div class="swot-cell">
+<div class="swot-letter">S</div>
+<div class="swot-cell-text">
+<strong>Strengths:</strong>
+<ul>
+<li>Software already partially developed with minimal costs</li>
+<li>Low post-implementation maintenance costs</li>
+<li>Established agreements with the Florence Metropolitan Area</li>
+<li>Cutting-edge technology adaptable to any urban area</li>
+</ul>
+</div>
+</div>
+<div class="swot-cell">
+<div class="swot-letter">W</div>
+<div class="swot-cell-text">
+<strong>Weaknesses:</strong>
+<ul>
+<li>Non-independent business model</li>
+<li>No alternative revenue streams</li>
+<li>Inexperienced entrepreneurial team</li>
+</ul>
+</div>
+</div>
+<div class="swot-cell">
+<div class="swot-letter">O</div>
+<div class="swot-cell-text">
+<strong>Opportunities:</strong>
+<ul>
+<li>High entry barriers for potential entrants</li>
+<li>Few existing competitors</li>
+<li>Aligned with European road safety priorities</li>
+<li>Scalable across Tuscany and other major urban areas</li>
+</ul>
+</div>
+</div>
+<div class="swot-cell">
+<div class="swot-letter">T</div>
+<div class="swot-cell-text">
+<strong>Threats:</strong>
+<ul>
+<li>Improvement of local public transport, reducing future congestion problems</li>
+<li>Customer bargaining power</li>
+<li>Potential expansion of already established overseas competitors</li>
+<li>Alternative solutions for faster emergency response</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="diagram-wrapper">
+<div class="diagram-title">Lean Canvas</div>
+<div class="lean-canvas">
+<div class="lc-box lc-tall">
+<div class="lc-title">Problem</div>
+<div class="lc-content">
+<ul>
+<li>Emergency vehicles slowed down by road congestion</li>
+<li>Limited safety in road emergency situations</li>
+</ul>
+</div>
+</div>
+<div class="lc-box">
+<div class="lc-title">Solution</div>
+<div class="lc-content">
+<ul>
+<li>Optimization of emergency response times</li>
+<li>On-time change of vertical traffic signs</li>
+</ul>
+</div>
+</div>
+<div class="lc-box lc-tall">
+<div class="lc-title">Value Proposition</div>
+<div class="lc-content">
+<ul>
+<li>Performance: improving emergency vehicle transport times</li>
+<li>Risk reduction: lowering the risk of deaths in ambulances</li>
+<li>Customized implementation for each area</li>
+</ul>
+</div>
+</div>
+<div class="lc-box">
+<div class="lc-title">Unfair Advantage</div>
+<div class="lc-content">
+<ul>
+<li>Innovative software system</li>
+<li>Partnership with public administration</li>
+</ul>
+</div>
+</div>
+<div class="lc-box lc-tall">
+<div class="lc-title">Customer Segments</div>
+<div class="lc-content">
+<ul>
+<li>Public administration</li>
+<li>Mobility departments</li>
+<li><em>Early Adopters:</em> Florence Metropolitan Area</li>
+</ul>
+</div>
+</div>
+<div class="lc-box">
+<div class="lc-title">Key Metrics</div>
+<div class="lc-content">
+<ul>
+<li>Pre-hospitalization time (LEA)</li>
+<li>Number of implemented sites</li>
+</ul>
+</div>
+</div>
+<div class="lc-box">
+<div class="lc-title">Channels</div>
+<div class="lc-content">
+<ul>
+<li>Public relations and simulation models</li>
+<li>Public-private partnership (PPP)</li>
+<li>After-sales support</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lean-canvas-bottom">
+<div class="lc-box">
+<div class="lc-title">Cost Structure</div>
+<div class="lc-content">
+<ul>
+<li>Salaries and legal consulting</li>
+<li>Software development and maintenance costs</li>
+<li>Public relations costs</li>
+</ul>
+</div>
+</div>
+<div class="lc-box">
+<div class="lc-title">Revenue Streams</div>
+<div class="lc-content">
+<ul>
+<li>Fixed revenues from system usage</li>
+<li>Variable revenues proportional to saved time (LEA improvement)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Fine Accordion Espandibile -->
+<!-- Riquadro Dichiarazione Etica IA (estratto da pagina 2 del PDF) -->
+<div class="prompt-box" style="margin-top: 24px;">
+<div class="prompt-header">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>Ethical Use of Artificial Intelligence</div>
+<div class="prompt-code" style="max-height: none;">"This report was entirely produced by the undersigned authors through research, selection, discussion, and interpretation of information concerning the competitive context, results, strategies, and business models of the assigned case study. [...] The work complies with academic integrity principles regarding the use of Artificial Intelligence tools, and in particular generative LLMs."</div>
+<div class="prompt-note">
+<strong>Specific applications in the project (via ChatGPT):</strong>
+<ul style="padding-left: 16px; margin-top: 6px; list-style-type: disc;">
+<li>Suggesting ideas and ways to explore topics further, providing specific or general examples;</li>
+<li>Facilitating research and identification of analytical material;</li>
+<li>Identifying grammar and spelling errors and opportunities for semantic and lexical improvement.</li>
+</ul>
+</div>
+<div class="ai-tools">
+<span class="ai-tag">ChatGPT</span>
+<span class="ai-tag">Academic Integrity</span>
+<span class="ai-tag">Research &amp; Analysis</span>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ── Education ── -->
 <section id="education">
-  <div class="section-header reveal">
-    <div class="section-num">05 — Formazione</div>
-    <h2 class="section-title">Le <em>radici</em></h2>
-  </div>
-  <div class="edu-grid">
-    <div class="edu-card expandable reveal" onclick="this.classList.toggle('expanded')">
-      <div class="edu-period">2022 — Ottobre 2026 (atteso)</div>
-      <div class="edu-degree">Laurea Triennale in Ingegneria Gestionale</div>
-      <div class="edu-spec">Specializzazione IT</div>
-      <div class="edu-inst">Università degli Studi di Firenze</div>
-      
-      <div class="edu-expand-toggle">
-        Vedi piano di studi
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <div class="edu-exams">
-        <div class="edu-exams-inner">
-          <div class="edu-exams-content">
-            <div class="edu-year-title">Primo Anno</div>
-            <ul class="edu-exams-list">
-              <li>Economia e Organizzazione Aziendale</li>
-              <li>Tecnologia dei Materiali e Chimica Applicata</li>
-              <li>Fisica Generale</li>
-              <li>Chimica</li>
-              <li>Geometria</li>
-              <li>Analisi Matematica</li>
-              <li>Fondamenti di Informatica (Python)</li>
-            </ul>
-            
-            <div class="edu-year-title">Secondo Anno</div>
-            <ul class="edu-exams-list">
-              <li>Meccanica Razionale</li>
-              <li>Tecnologie e Studi di Fabbricazione</li>
-              <li>Statistica Industriale</li>
-              <li>Sistemi Energetici</li>
-              <li>Fisica Tecnica Industriale</li>
-              <li>Principi di Ingegneria Elettrica</li>
-              <li>Ingegneria del Software (Java, UML)</li>
-              <li>Reti Dati per Applicazioni Industriali (C++, Arduino IDE, HTML)</li>
-              <li>Basi di Dati (SQL, PostgreSQL)</li>
-            </ul>
-            
-            <div class="edu-year-title">Terzo Anno</div>
-            <ul class="edu-exams-list">
-              <li>Strategia di Impresa</li>
-              <li>Gestione della Qualità e Sistemi di Gestione Ambientale</li>
-              <li>Gestione della Produzione Industriale</li>
-              <li>Impianti e Logistica Industriale</li>
-              <li>Laboratorio di Processi Aziendali</li>
-              <li>Fondamenti di Ricerca Operativa</li>
-              <li>Economia dell'Impresa</li>
-              <li>Geografia dell'Impresa</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="edu-card reveal reveal-delay-1">
-      <div class="edu-period">2017 — 2022</div>
-      <div class="edu-degree">Diploma Scientifico</div>
-      <div class="edu-spec">Liceo Scientifico Ordinario</div>
-      <div class="edu-inst">Liceo Scientifico Guido Castelnuovo, Firenze</div>
-    </div>
-  </div>
+<div class="section-header reveal">
+<div class="section-num">05 — Education</div>
+<h2 class="section-title">The <em>roots</em></h2>
+</div>
+<div class="edu-grid">
+<div class="edu-card expandable reveal" onclick="this.classList.toggle('expanded')">
+<div class="edu-period">2022 — October 2026 (expected)</div>
+<div class="edu-degree">BSc in Management Engineering</div>
+<div class="edu-spec">IT Specialization</div>
+<div class="edu-inst">University of Florence</div>
+<div class="edu-expand-toggle">View study plan<svg fill="none" height="12" viewbox="0 0 16 16" width="12">
+<path d="M4 6L8 10L12 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="edu-exams">
+<div class="edu-exams-inner">
+<div class="edu-exams-content">
+<div class="edu-year-title">First Year</div>
+<ul class="edu-exams-list">
+<li>Business Economics and Organization</li>
+<li>Materials Technology and Applied Chemistry</li>
+<li>General Physics</li>
+<li>Chemistry</li>
+<li>Geometry</li>
+<li>Mathematical Analysis</li>
+<li>Fundamentals of Computer Science (Python)</li>
+</ul>
+<div class="edu-year-title">Second Year</div>
+<ul class="edu-exams-list">
+<li>Rational Mechanics</li>
+<li>Manufacturing Technologies and Studies</li>
+<li>Industrial Statistics</li>
+<li>Energy Systems</li>
+<li>Industrial Technical Physics</li>
+<li>Principles of Electrical Engineering</li>
+<li>Software Engineering (Java, UML)</li>
+<li>Data Networks for Industrial Applications (C++, Arduino IDE, HTML)</li>
+<li>Databases (SQL, PostgreSQL)</li>
+</ul>
+<div class="edu-year-title">Third Year</div>
+<ul class="edu-exams-list">
+<li>Business Strategy</li>
+<li>Quality Management and Environmental Management Systems</li>
+<li>Industrial Production Management</li>
+<li>Industrial Plants and Logistics</li>
+<li>Business Process Laboratory</li>
+<li>Fundamentals of Operations Research</li>
+<li>Business Economics</li>
+<li>Economic Geography</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="edu-card reveal reveal-delay-1">
+<div class="edu-period">2017 — 2022</div>
+<div class="edu-degree">Scientific High School Diploma</div>
+<div class="edu-spec">Traditional Scientific High School Program</div>
+<div class="edu-inst">Liceo Scientifico Guido Castelnuovo, Florence</div>
+</div>
+</div>
 </section>
-
 <!-- ── Travel ── -->
 <section id="travel">
-  <div class="section-header reveal">
-    <div class="section-num">06 — I miei viaggi</div>
-    <h2 class="section-title">Oltre i <em>confini</em></h2>
-  </div>
-  
-  <!-- Contenitore dell'animazione aereo -->
-  <div class="travel-reveal-container reveal reveal-delay-1">
-    
-    <!-- La linea tratteggiata sfuma e scompare dopo che l'aereo fa la sua passata -->
-    <div class="travel-path-line"></div>
-    
-    <!-- La vera e propria griglia nascosta dietro al sipario -->
-    <div class="travel-grid">
-      <!-- Colonna 1: Visitati -->
-      <div class="travel-col">
-        <h3 class="travel-col-title">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          Paesi Visitati
-        </h3>
-        <ul class="travel-list">
-          <li class="travel-item"><span class="travel-flag">🇦🇹</span> Austria</li>
-          <li class="travel-item"><span class="travel-flag">🇧🇬</span> Bulgaria</li>
-          <li class="travel-item"><span class="travel-flag">🇻🇦</span> Città del Vaticano</li>
-          <li class="travel-item"><span class="travel-flag">🇫🇷</span> Francia</li>
-          <li class="travel-item"><span class="travel-flag">🇬🇷</span> Grecia</li>
-          <li class="travel-item"><span class="travel-flag">🇮🇹</span> Italia</li>
-          <li class="travel-item"><span class="travel-flag">🇳🇱</span> Paesi Bassi</li>
-          <li class="travel-item"><span class="travel-flag">🇵🇱</span> Polonia</li>
-          <li class="travel-item"><span class="travel-flag">🇬🇧</span> Regno Unito</li>
-          <li class="travel-item"><span class="travel-flag">🇷🇸</span> Serbia</li>
-          <li class="travel-item"><span class="travel-flag">🇪🇸</span> Spagna</li>
-        </ul>
-      </div>
-
-      <!-- Colonna 2: Wishlist -->
-      <div class="travel-col">
-        <h3 class="travel-col-title">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+<div class="section-header reveal">
+<div class="section-num">06 — My travels</div>
+<h2 class="section-title">Beyond <em>borders</em></h2>
+</div>
+<!-- Contenitore dell'animazione aereo -->
+<div class="travel-reveal-container reveal reveal-delay-1">
+<!-- La linea tratteggiata sfuma e scompare dopo che l'aereo fa la sua passata -->
+<div class="travel-path-line"></div>
+<!-- La vera e propria griglia nascosta dietro al sipario -->
+<div class="travel-grid">
+<!-- Colonna 1: Visitati -->
+<div class="travel-col">
+<h3 class="travel-col-title">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>Countries Visited</h3>
+<ul class="travel-list">
+<li class="travel-item"><span class="travel-flag">🇦🇹</span> Austria</li>
+<li class="travel-item"><span class="travel-flag">🇧🇬</span> Bulgaria</li>
+<li class="travel-item"><span class="travel-flag">🇻🇦</span> Vatican City</li>
+<li class="travel-item"><span class="travel-flag">🇫🇷</span> France</li>
+<li class="travel-item"><span class="travel-flag">🇬🇷</span> Greece</li>
+<li class="travel-item"><span class="travel-flag">🇮🇹</span> Italy</li>
+<li class="travel-item"><span class="travel-flag">🇳🇱</span> Netherlands</li>
+<li class="travel-item"><span class="travel-flag">🇵🇱</span> Poland</li>
+<li class="travel-item"><span class="travel-flag">🇬🇧</span> United Kingdom</li>
+<li class="travel-item"><span class="travel-flag">🇷🇸</span> Serbia</li>
+<li class="travel-item"><span class="travel-flag">🇪🇸</span> Spain</li>
+</ul>
+</div>
+<!-- Colonna 2: Wishlist -->
+<div class="travel-col">
+<h3 class="travel-col-title">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           Wishlist
         </h3>
-        <ul class="travel-list">
-          <li class="travel-item"><span class="travel-flag">🇦🇺</span> Australia</li>
-          <li class="travel-item"><span class="travel-flag">🇨🇦</span> Canada</li>
-          <li class="travel-item"><span class="travel-flag">🇩🇰</span> Danimarca</li>
-          <li class="travel-item"><span class="travel-flag">🇯🇵</span> Giappone</li>
-          <li class="travel-item"><span class="travel-flag">🇮🇸</span> Islanda</li>
-          <li class="travel-item"><span class="travel-flag">🇳🇴</span> Norvegia</li>
-          <li class="travel-item"><span class="travel-flag">🇺🇸</span> Stati Uniti</li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- Sipario e aereo -->
-    <div class="travel-curtain">
-      <div class="airplane-wrapper">
-        <!-- L'aereo ora è gigantesco: 400x400 -->
-        <svg width="400" height="400" viewBox="0 0 24 24" fill="currentColor" style="transform: rotate(90deg);">
-          <path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/>
-        </svg>
-      </div>
-    </div>
-    
-  </div>
+<ul class="travel-list">
+<li class="travel-item"><span class="travel-flag">🇦🇺</span> Australia</li>
+<li class="travel-item"><span class="travel-flag">🇨🇦</span> Canada</li>
+<li class="travel-item"><span class="travel-flag">🇩🇰</span> Denmark</li>
+<li class="travel-item"><span class="travel-flag">🇯🇵</span> Japan</li>
+<li class="travel-item"><span class="travel-flag">🇮🇸</span> Iceland</li>
+<li class="travel-item"><span class="travel-flag">🇳🇴</span> Norway</li>
+<li class="travel-item"><span class="travel-flag">🇺🇸</span> United States</li>
+</ul>
+</div>
+</div>
+<!-- Sipario e aereo -->
+<div class="travel-curtain">
+<div class="airplane-wrapper">
+<!-- L'aereo ora è gigantesco: 400x400 -->
+<svg fill="currentColor" height="400" style="transform: rotate(90deg);" viewbox="0 0 24 24" width="400">
+<path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"></path>
+</svg>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ── Contact ── -->
 <section id="contact">
-  <div class="section-num">07 — Contatti</div>
-  <h2 class="section-title">Parliamoci.</h2>
-  <p class="contact-sub">
-   Disponibile per stage, part-time o semplicemente per una conversazione su processi, tecnologia e management.
-  </p>
-  <div class="contact-links">
-    <a href="mailto:pietrogmcalderoni@gmail.com" class="contact-link primary">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3.5" width="13" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M1.5 5l6.5 5 6.5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+<div class="section-num">07 — Contact</div>
+<h2 class="section-title">Let’s talk.</h2>
+<p class="contact-sub">Available for internships, part-time opportunities, or simply a conversation about processes, technology, and management.</p>
+<div class="contact-links">
+<a class="contact-link primary" href="mailto:pietrogmcalderoni@gmail.com">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><rect height="9" rx="1.5" stroke="currentColor" stroke-width="1.3" width="13" x="1.5" y="3.5"></rect><path d="M1.5 5l6.5 5 6.5-5" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path></svg>
       pietrogmcalderoni@gmail.com
     </a>
-    <a href="https://linkedin.com/in/pietrogmcalderoni" target="_blank" rel="noopener noreferrer" class="contact-link">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M5 6.5V11M5 4.5V5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M8 11V8.5c0-1.1.9-2 2-2s2 .9 2 2V11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M8 6.5V11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+<a class="contact-link" href="https://linkedin.com/in/pietrogmcalderoni" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><rect height="13" rx="2" stroke="currentColor" stroke-width="1.3" width="13" x="1.5" y="1.5"></rect><path d="M5 6.5V11M5 4.5V5" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path><path d="M8 11V8.5c0-1.1.9-2 2-2s2 .9 2 2V11" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path><path d="M8 6.5V11" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path></svg>
       LinkedIn
     </a>
-    <a href="https://github.com/piecalde" target="_blank" rel="noopener noreferrer" class="contact-link">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+<a class="contact-link" href="https://github.com/piecalde" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" viewbox="0 0 24 24" width="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
       GitHub
     </a>
-  </div>
+</div>
 </section>
-
 <!-- ── Footer ── -->
 <footer>
-  <p>© 2026 Pietro G. M. Calderoni — Firenze, Italia</p>
+<p>© 2026 Pietro G. M. Calderoni — Florence, Italy</p>
 </footer>
-
 <script>
   // Cursor dot — solo su dispositivi con mouse (non touch)
   const cursor = document.getElementById('cursor');
