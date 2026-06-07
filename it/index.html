@@ -3,6 +3,33 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QEQ15JTK97"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QEQ15JTK97');
+</script>
+<script>
+  function trackCvDownload(language) {
+    if (window.gtag) {
+      gtag('event', 'cv_download_click', {
+        file_name: 'Pietro_Calderoni_CV_portfolio.pdf',
+        file_extension: 'pdf',
+        link_text: language === 'it' ? 'Scarica CV' : 'Download CV',
+        page_language: language,
+        transport_type: 'beacon'
+      });
+    }
+    if (window.clarity) {
+      clarity('event', 'download_cv');
+      clarity('set', 'cv_download_language', language);
+    }
+  }
+</script>
+
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -1525,7 +1552,7 @@
 <a href="#travel">Viaggi</a>
 <a href="#contact">Contatti</a>
 <div aria-label="Language selector" class="mobile-lang-switch"><a href="/">EN</a><a class="active" href="/it/">IT</a></div>
-<a download="" href="../Pietro_Calderoni_CV_portfolio.pdf" style="color: var(--terra); margin-top: 16px;">Scarica CV</a>
+<a download="" href="../Pietro_Calderoni_CV_portfolio.pdf" style="color: var(--terra); margin-top: 16px;" onclick="trackCvDownload('it')">Scarica CV</a>
 </div>
 <section id="hero">
 <div class="hero-left">
@@ -1538,7 +1565,7 @@
     </p>
 <div class="hero-actions">
 <a class="btn-primary" href="#experience">Vedi il mio percorso</a>
-<a class="btn-ghost" download="" href="../Pietro_Calderoni_CV_portfolio.pdf">
+<a class="btn-ghost" download="" href="../Pietro_Calderoni_CV_portfolio.pdf" onclick="trackCvDownload('it')">
         Scarica CV
         <svg fill="none" height="16" viewbox="0 0 16 16" width="16">
 <path d="M8 2v9m0 0l-3-3m3 3l3-3m-8 5h10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
