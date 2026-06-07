@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pietrogmcalderoni.github.io/sitemap.xml
